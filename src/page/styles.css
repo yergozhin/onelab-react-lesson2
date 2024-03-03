@@ -1,0 +1,39 @@
+.navigation-menu {
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    align-items: center;
+    justify-content: space-around;
+}
+th{
+    border: 1px solid #ddd;
+    text-align: left;
+    width: 480px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #04AA6D;
+    color: white;
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid #ddd;
+    text-align: left;
+    width: 480px;
+    border-collapse: collapse;
+}
+.form {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content input {
+    margin-bottom: 7px;
+}
