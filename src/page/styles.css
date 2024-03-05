@@ -23,6 +23,12 @@ td{
     width: 480px;
     border-collapse: collapse;
 }
+.pgbutton {
+    text-decoration: none;
+}
+.pglink {
+    text-decoration: none;
+}
 .form {
     width: 100vw;
     height: 100vh;
