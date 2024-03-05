@@ -1,29 +1,35 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./styles.css";
 
 export default function Home() {
+    const navigateTo = useNavigate();
+    
+    const addPage = () => {
+        navigateTo("/add");
+    }
+    const listPage = () => {
+        navigateTo("/list");
+    }
+    const deletePage = () => {
+        navigateTo("/delete");
+    }
+    const updatePage = () => {
+        navigateTo("/search");
+    }
     return (
-        <nav className="navigation-menu">
-            <button className="pgbutton">
-            <Link className="pglink" to="/add">
+        <div className="navigation-menu">
+            <button onClick={addPage} className="pgbutton">
                 Go to Add page
-            </Link>
             </button>
-            <button className="pgbutton">
-            <Link className="pglink" to="/list">
+            <button onClick={listPage} className="pgbutton">
                 Go to List page
-            </Link>
             </button>
-            <button className="pgbutton">
-            <Link className="pglink" to="/delete">
+            <button onClick={deletePage} className="pgbutton">
                 Go to Delete page
-            </Link>
             </button>
-            <button className="pgbutton">
-            <Link className="pglink" to="/search">
+            <button onClick={updatePage} className="pgbutton">
                 Go to Update page
-            </Link>
-            </button>
-        </nav>
+                </button>
+        </div>
     );
 }

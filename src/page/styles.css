@@ -24,10 +24,16 @@ td{
     border-collapse: collapse;
 }
 .pgbutton {
-    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
-.pglink {
-    text-decoration: none;
+.pgbutton:hover {
+    background-color: #eff3ef;
+}
+.pgbutton:active {
+    background-color: #7a7d7a;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 .form {
     width: 100vw;
