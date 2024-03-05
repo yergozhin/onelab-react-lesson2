@@ -29,7 +29,7 @@ export default function Home() {
             </button>
             <button onClick={updatePage} className="pgbutton">
                 Go to Update page
-                </button>
+            </button>
         </div>
     );
 }

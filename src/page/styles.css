@@ -24,14 +24,15 @@ td{
     border-collapse: collapse;
 }
 .pgbutton {
+    padding: 15px 25px;
     border-radius: 15px;
     box-shadow: 0 9px #999;
 }
 .pgbutton:hover {
-    background-color: #eff3ef;
+    background-color: #7f807f;
 }
 .pgbutton:active {
-    background-color: #7a7d7a;
+    background-color: #4e4d4d;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
@@ -41,6 +42,8 @@ td{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url("train-trees-steam-locomotive-steam-wallpaper.jpg");
+    background-size: 1500px;
 }
 
 .form-content {
@@ -49,5 +52,21 @@ td{
 }
 
 .form-content input {
+    border-radius: 15px;
+    padding: 15px 25px;
     margin-bottom: 7px;
+    font-size: medium;
+}
+.uppgbutton{
+    padding: 15px 25px;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: #a6f581;
+}
+.uppgbutton:hover {
+    background-color: #5fcb5f;
+}
+.uppgbutton:active {
+    background-color: #57a733;
+    transform: translateY(4px);
 }

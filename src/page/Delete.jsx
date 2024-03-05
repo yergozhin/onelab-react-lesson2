@@ -65,7 +65,7 @@ export default function Delete() {
                 <input value={name} onChange={handleNameChange} type="text" name="name" placeholder="First Name"/>
                 <input value={surname} onChange={handleSurnameChange} type="text" name="surname" placeholder="Last Name"/>
                 <input value={phone} onChange={handlePhoneChange} type="text" name="phonenumber" placeholder="Phone Number"/>
-                <button onClick={onDelete}>
+                <button onClick={onDelete} className="pgbutton">
                     Delete
                 </button>
             </div>

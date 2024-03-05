@@ -81,18 +81,18 @@ export default function Search() {
     return (
         <div className="form">
             <div className="form-content">
+            <button onClick={onUpdateName} className="uppgbutton">
+                    Update Name
+                </button>
                 <input value={name} onChange={handleNameChange} type="text" name="name" placeholder="First Name"/>
-                <button onClick={onUpdateName}>
-                    Update
+                <button onClick={onUpdateSurname} className="uppgbutton">
+                    Update Surname
                 </button>
                 <input value={surname} onChange={handleSurnameChange} type="text" name="surname" placeholder="Last Name"/>
-                <button onClick={onUpdateSurname}>
-                    Update
+                <button onClick={onUpdatePhone} className="uppgbutton">
+                    Update Phone
                 </button>
                 <input value={phone} onChange={handlePhoneChange} type="text" name="phonenumber" placeholder="Phone Number"/>
-                <button onClick={onUpdatePhone}>
-                    Update
-                </button>
             </div>
         </div>
     );
